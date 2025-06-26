@@ -1,0 +1,44 @@
+.left {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    background-color: #242424;
+    transform: translateX(0);
+    color: #fff;
+    font-size: 50px;
+    z-index: 999;
+    transition: transform 1s ease-in-out;
+}
+
+.right {
+    position: fixed;
+    display: flex;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    background-color: #242424;
+    transform: translateX(0);
+    color: #fff;
+    font-size: 50px;
+    z-index: 999;
+    transition: transform 1s ease-in-out;
+}
+
+/* ドアを開くとき */
+.leftActive {
+    transform: translateX(-100%);
+}
+
+.rightActive {
+    transform: translateX(100%);
+}
