@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 import { ROUTES } from "../const"
 import styles from "./StartPage.module.css";
 
-export default function StartPage() {
-    const questionMarks = Array.from({ length: 30 });
+const StartPage: React.FC = () => {
+  const questionMarks = Array.from({ length: 30 });
     return (
         <div className={styles.topWrapper}>
             {questionMarks.map((_, index) => {
@@ -28,3 +28,4 @@ export default function StartPage() {
         </div>
     );
 }
+export default StartPage

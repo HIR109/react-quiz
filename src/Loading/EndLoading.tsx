@@ -1,6 +1,10 @@
 import styles from "./EndLoading.module.css"
 
-export default function EndLoading({ isActive }) {
+type Props = {
+    isActive: boolean;
+};
+
+export default function EndLoading({ isActive }: Props) {
     return (
         <>
             <div className={`${styles.door} ${styles.left} ${isActive ? styles.leftActive : ""}`}>結果</div>

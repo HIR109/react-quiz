@@ -11,7 +11,7 @@ import StartLoading from "../Loading/StartLoading";
 
 export default function QuizPage() {
     const [quizIndex, setQuizIndex] = useState(0);
-    const [answerLogs, setAnswerLogs] = useState([]);
+    const [answerLogs, setAnswerLogs] = useState<boolean[]>([]);
     const navigate = useNavigate();
     const MAX_QUIZ_LEN = QuizData.length;
     const [isCurtain, setIsCurtain] = useState(true);
@@ -20,7 +20,7 @@ export default function QuizPage() {
 
 
 
-    const handleClick = (clickedIndex) => {
+    const handleClick = (clickedIndex: number) => {
         if (clickedIndex === QuizData[quizIndex].answerIndex) {
             setAnswerLogs((prev) => [...prev, true]);
         } else {

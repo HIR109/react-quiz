@@ -1,6 +1,10 @@
 import styles from "./Display.module.css"
 
-export default function Display({children}) {
+type Props={
+  children:React.ReactNode;
+}
+
+export default function Display({children}:Props) {
   return (
     <div className={styles.display}>{children}</div>
   )

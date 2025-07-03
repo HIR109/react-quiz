@@ -6,7 +6,10 @@ import Result from "../components/Result/Result";
 import EndLoading from "../Loading/EndLoading";
 import { useEffect, useState } from "react";
 
-
+interface ResultProps {
+  maxQuizLen: number;
+  correctAnswersLen: number;
+}
 
 export default function ResultPage() {
   const [isActive, setActive] = useState(false);

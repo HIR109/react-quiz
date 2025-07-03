@@ -1,8 +1,26 @@
-# React + Vite
+# Reactクイズアプリ 🎉
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React（＋Vite）で制作した、5問形式のクイズアプリです。
 
-Currently, two official plugins are available:
+## 概要
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Reactの基礎知識を問うクイズ（5問）
+- カウントダウン付きのスタート演出
+- 正解数に応じてエンディング演出（Confetti or 残念画面）
+
+## 使用技術
+
+- React
+- React Router
+- Vite
+- CSS Modules
+- react-confetti
+
+## 起動方法
+
+```bash
+git clone https://github.com/HIR109/react-quiz.git
+cd react-quiz
+npm install
+npm run dev
+

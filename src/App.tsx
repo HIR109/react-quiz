@@ -3,11 +3,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { ROUTES } from './const'
-import QuizPage from './Pages/QuizPage'
-import StartPage from './Pages/StartPage'
-import ResultPage from './Pages/ResultPage'
+import QuizPage from './Pages/QuizPage';
+import StartPage from './Pages/StartPage';
+import ResultPage from './Pages/ResultPage';
 
-function App() {
+const App: React.FC = () => {
 
   return (
     <>

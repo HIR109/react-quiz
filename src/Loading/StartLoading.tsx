@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import styles from "./StartLoading.module.css";
 
-export default function StartLoading({ onFinish }) {
+type Props = {
+    onFinish: ()=>void;
+};
+
+export default function StartLoading({ onFinish }:Props) {
     const [count, setCount] = useState(3);
     const [open, setOpen] = useState(false);
 
