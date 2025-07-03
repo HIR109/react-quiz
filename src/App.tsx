@@ -1,6 +1,6 @@
 
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { ROUTES } from './const'
 import QuizPage from './Pages/QuizPage';
@@ -11,13 +11,13 @@ const App: React.FC = () => {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path={ROUTES.START} element={<StartPage />} />
           <Route path={ROUTES.QUIZ} element={<QuizPage />} />
           <Route path={ROUTES.RESULT} element={<ResultPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </>
   )
